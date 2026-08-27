@@ -1,0 +1,19 @@
+# Ejecutables compilados
+*.exe
+*.out
+diagnostico
+*.o
+*.obj
+
+# Logs generados en pruebas locales (no subir logs de prueba)
+logs/*.log
+logs/*.txt
+!logs/.gitkeep
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración de editores
+.vscode/
+.idea/

@@ -1,0 +1,6 @@
+Esta carpeta es donde su programa debe generar el archivo de registro
+(log) al ejecutarse — por ejemplo logs/diagnostico.log
+
+No suban aquí archivos de log de sus propias pruebas: el .gitignore ya
+está configurado para ignorarlos. Este archivo (.gitkeep) solo existe
+para que la carpeta se conserve vacía dentro del repositorio.
