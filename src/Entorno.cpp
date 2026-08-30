@@ -20,7 +20,7 @@ int obtenerCantidadNucleos() {
     return 1; // Valor por defecto si no se encuentra la variable de entorno
 
 
-    //OPCION ANTERIOR 
+    //OPCION ANTERIOR ya que esta presento errores , se uso IA generativa para tratar el error al detectar los nucleos ya que en el entorno aislado la opcion original no funciona 
     //https://stackoverflow.com/questions/150355/programmatically-find-the-number-of-cores-on-a-machine
     //int obtenerCantidadNucleos() {
     // hardware_concurrency() devuelve el número de núcleos lógicos.
