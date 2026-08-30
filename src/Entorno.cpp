@@ -99,7 +99,7 @@ bool estaEnEntornoAislado() {
     string indicadorHostname = verificarHostname(); 
     
 
-    // Si tiene 2 núcleos o menos, O tiene archivos, O el hostname es sospechoso
+    // Si tiene 2 núcleos o menos o tiene archivos o el hostname es sospechoso
     //Se deben cumplir al menos una condicion 
     if (nucleos <= 2 || tieneArchivosVM || indicadorHostname != "Limpio") {
         aislado = true;
