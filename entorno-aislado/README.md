@@ -52,9 +52,9 @@
 ## Evidencia
 ### 1. Administrador de Snapshot en VMware
 Se tomo una captura de pantalla del estado base funcional del sistema operativo antes de instalar las herramientas para el diagnostico
-![Snapshot Base VMware](docs/snapshot_evidencia.png)
+![Snapshot VMware](docs/snapshot_evidencia.png)
 
 ### 2. Prueba de Aislamiento de Red
 Desde la consola de Powershell se ejecuto la prueba de conectividad hacia un servidor DNS publico "ping 8.8.8.8" . El resultado fallo, probando que no hay conectividad
-![Prueba Ping Powershell](docs/ping_aislamiento.png)
+![Aislamiento](docs/ping_aislamiento.png)
 
