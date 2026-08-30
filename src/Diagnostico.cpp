@@ -2,7 +2,7 @@
  * ============================================================
  *  Diagnostico.cpp — Definiciones: procesamiento y registro
  * ============================================================
- */
+ */o
 
 #include "Diagnostico.h"
 #include <iostream>
