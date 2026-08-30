@@ -9,7 +9,7 @@ Programación Avanzada para Ciberseguridad (PAC) — Fase 1
 | Integrante | Rol / aportación |
 |---|---|
 | Carlos Alexis Vargas Flores | [Modulos de Entorno , main parcial, investigación y erorres |
-| [Nombre completo] | [ej. Manejo de archivos y excepciones] |
+| Hugo Gael Arredondo Esparza | Modulo de Diagnostico, investigacion de codigo y correccion de errores de ejecucion |
 | [Nombre completo] | [ej. Documentación del entorno aislado] |
 
 ## Descripción del proyecto
