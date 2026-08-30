@@ -61,12 +61,12 @@ Reto1-NombreDelEquipo/
 
 Marquen con ✅ conforme los vayan completando — esto les sirve como checklist propio, y a mí para revisar rápido:
 
-- [ ] Entorno aislado propio, construido y documentado
-- [ ] Tipos de datos y operadores usados con propósito real (no solo de adorno)
-- [ ] Al menos una decisión (if/switch) y un bucle (for/while) con propósito real
-- [ ] Al menos 3 funciones con responsabilidades distintas
-- [ ] Una `struct` que agrupe los datos recolectados del entorno
-- [ ] Al menos un uso justificado de puntero o `new`/`delete`
-- [ ] Proyecto dividido en más de un archivo (`.h` + `.cpp` + `main.cpp`)
-- [ ] El resultado del diagnóstico se guarda en un archivo de registro
-- [ ] Manejo de al menos un caso de error con `try`/`catch`
+- [ ✅ Entorno aislado propio, construido y documentado
+- [ ✅] Tipos de datos y operadores usados con propósito real (no solo de adorno)
+- [ ✅] Al menos una decisión (if/switch) y un bucle (for/while) con propósito real
+- [✅ ] Al menos 3 funciones con responsabilidades distintas
+- [ ✅] Una `struct` que agrupe los datos recolectados del entorno
+- [✅ ] Al menos un uso justificado de puntero o `new`/`delete`
+- [ ✅] Proyecto dividido en más de un archivo (`.h` + `.cpp` + `main.cpp`)
+- [ ✅] El resultado del diagnóstico se guarda en un archivo de registro
+- [ ✅] Manejo de al menos un caso de error con `try`/`catch`
