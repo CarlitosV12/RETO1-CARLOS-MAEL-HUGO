@@ -13,11 +13,11 @@ using namespace std;
 
 // 1. Verificar la cantidad de núcleos del procesador
 int obtenerCantidadNucleos() {
-    // hardware_concurrency() devuelve el número de núcleos lógicos.
-    // En las máquinas virtuales de laboratorio suelen estar limitados a 1 o 2.
-    unsigned int nucleos = thread::hardware_concurrency();
-    return nucleos; 
-
+    char* envNucleos = getenv("Numero de nucleos");
+    if (envNucleos != nullptr) {
+        return atoi(envNucleos); // Convertimos a int
+    } 
+    return 1; // Valor por defecto si no se encuentra la variable de entorno
     //https://stackoverflow.com/questions/150355/programmatically-find-the-number-of-cores-on-a-machine
     
 }
