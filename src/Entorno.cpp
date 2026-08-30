@@ -53,7 +53,7 @@ string verificarHostname() {
     // https://www.ibm.com/docs/es/i/7.5.0?topic=functions-getenv-search-environment-variables}
 
     char* ptrNombreEquipo = getenv("COMPUTERNAME");
-    
+    string hostnameActual = (ptrNombreEquipo != nullptr) ? ptrNombreEquipo : "Desconocido";
 
     // Usamo snew para crear un arreglo dinámico
     int numNombres = 6;
@@ -99,7 +99,7 @@ bool estaEnEntornoAislado() {
     string indicadorHostname = verificarHostname(); 
     
 
-    // Si tiene 2 núcleos o menos o tiene archivos o el hostname es sospechoso
+    // Si tiene 2 núcleos o menos, O tiene archivos, O el hostname es sospechoso
     //Se deben cumplir al menos una condicion 
     if (nucleos <= 2 || tieneArchivosVM || indicadorHostname != "Limpio") {
         aislado = true;
