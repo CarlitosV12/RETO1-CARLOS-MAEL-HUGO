@@ -38,6 +38,15 @@ En Windows, el ejecutable se genera como `herramientadiagnostico.exe`.
 - Pantalla: Se imprime `Entorno Aislado: SI`. Se nos muestra una alerta por pocos núcleos (<=2), y que hay una presencia de drivers de VMware (`vmhgfs.sys `, etc)
 - Logs: Nos lanza el mensaje que se con varias características y detalles que nos dan a entender que efectivamente, en donde se ejecuto el programa es un entorno aislado.
 
+## Evidencia
+### 1. Pantalla del entorno aislado
+Se tomo una captura de pantalla del estado en cuento se ejecuto el programa para detectar si se encontraba dentro de un entorno aislado.
+![Pantalla Entorno Aislado](docs/ejecución_programas.png)
+
+### 2. Log de Diagnostico
+En cuanto se ejecuto el programa, este genero un log en donde mostraba características y detalles del diagnostico.
+![Log diagnostico](docs/logs_diagnostico.png)
+
 **Fuera del entorno aislado (en otra VM sin aislar, o en su equipo host):**
 [Describan qué imprime el programa en pantalla y qué queda registrado en el log cuando NO detecta aislamiento.]
 
