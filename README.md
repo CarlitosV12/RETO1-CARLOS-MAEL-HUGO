@@ -10,7 +10,7 @@ Programación Avanzada para Ciberseguridad (PAC) — Fase 1
 |---|---|
 | Carlos Alexis Vargas Flores | [Modulos de Entorno , main parcial, investigación y erorres |
 | Hugo Gael Arredondo Esparza | Modulos de Diagnostico, investigacion de codigo y correccion de errores de ejecucion |
-| [Nombre completo] | [ej. Documentación del entorno aislado] |
+| Luis Mael Treviño Mares | Documentación y preparación del entorno aislado para la ejecución del reto |
 
 ## Descripción del proyecto
 
@@ -21,21 +21,22 @@ Programación Avanzada para Ciberseguridad (PAC) — Fase 1
 Todos los archivos `.cpp` se compilan juntos en un solo paso:
 
 ```bash
-g++ src/main.cpp src/Entorno.cpp src/Diagnostico.cpp -o diagnostico
+g++ -std=c++17 src/main.cpp src/Entorno.cpp src/Diagnostico.cpp -o herramienta_diagnostico.exe
 ```
 
 ## Cómo ejecutar
 
 ```bash
-./diagnostico
+.\herramienta_diagnostico.exe
 ```
 
-En Windows, el ejecutable se genera como `diagnostico.exe`.
+En Windows, el ejecutable se genera como `herramientadiagnostico.exe`.
 
 ## Comportamiento esperado
 
 **Dentro del entorno aislado:**
-[Describan qué imprime el programa en pantalla y qué queda registrado en el log cuando SÍ detecta aislamiento.]
+- Pantalla: Se imprime `Entorno Aislado: SI`. Se nos muestra una alerta por pocos núcleos (<=2), y que hay una presencia de drivers de VMware (`vmhgfs.sys `, etc)
+- Logs: Nos lanza el mensaje que se con varias características y detalles que nos dan a entender que efectivamente, en donde se ejecuto el programa es un entorno aislado.
 
 **Fuera del entorno aislado (en otra VM sin aislar, o en su equipo host):**
 [Describan qué imprime el programa en pantalla y qué queda registrado en el log cuando NO detecta aislamiento.]
