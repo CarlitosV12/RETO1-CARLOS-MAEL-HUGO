@@ -22,7 +22,8 @@ using namespace std;
 struct InfoEntorno {
     bool aislado;
     string detalle;       // qué se detectó y por qué
-    // agreguen aquí los campos que necesiten
+    int CPU_nucleos; // cantidad de núcleos de CPU, normalmente colocan un valor bajo en entornos virtuales
+    string hostname; // nombre del host de la máquina, que puede ser un indicador de un entorno aislado
 };
 
 // TODO: declaren aquí sus funciones de procesamiento y registro.
@@ -35,5 +36,5 @@ struct InfoEntorno {
 //      archivo no se pueda crear o abrir.
 
 void registrarResultado(const InfoEntorno& info, const string& rutaLog);
-
+// se utiliza referencia para evitar copiar toda la estructura, con el &.
 #endif
