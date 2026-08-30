@@ -8,7 +8,7 @@ Programación Avanzada para Ciberseguridad (PAC) — Fase 1
 
 | Integrante | Rol / aportación |
 |---|---|
-| [Nombre completo] | [ej. Detección de entorno, módulo Entorno.cpp] |
+| Carlos Alexis Vargas Flores | [Modulos de Entorno , main parcial, investigación y erorres |
 | [Nombre completo] | [ej. Manejo de archivos y excepciones] |
 | [Nombre completo] | [ej. Documentación del entorno aislado] |
 
