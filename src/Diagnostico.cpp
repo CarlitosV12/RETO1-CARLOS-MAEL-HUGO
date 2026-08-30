@@ -26,14 +26,20 @@ void registrarResultado(const InfoEntorno& info, const string& rutaLog) {
         // TODO: escriban aquí el resultado del diagnóstico en el
         // formato que decidan (incluyan al menos: si se detectó
         // aislamiento o no, y el detalle de qué se evaluó).
+        log << "=== Resultado del diagnostico ===" << endl;
+        log << "Hostname: " << info.hostname << endl; 
+        log << "CPU nucleos: " << info.CPU_nucleos << endl;
         log << "Aislado: " << (info.aislado ? "si" : "no") << endl;
         log << "Detalle: " << info.detalle << endl;
 
         log.close();
+        cout << "Resultado registrado en: " << rutaLog << endl;
 
     } catch (const exception& e) {
         cout << "Error al registrar el resultado: " << e.what() << endl;
         // TODO: decidan si además de avisar en pantalla quieren
         // relanzar la excepción (throw;) para que main() la maneje.
+        throw; // relanzamos la excepción para que main() la maneje dandole el control de decidir si se
+        // quiere continuar o abortar la ejecución del programa.
     }
 }
