@@ -11,7 +11,7 @@
 
 using namespace std;
 
-// 1. Verificar la cantidad de núcleos del procesador
+// Verificar la cantidad de núcleos del procesador
 int obtenerCantidadNucleos() {
     char* envNucleos = getenv("Numero de nucleos");
     if (envNucleos != nullptr) {
@@ -33,7 +33,7 @@ int obtenerCantidadNucleos() {
 }
 
 
-// 2. Verificar rutas comunes en el sistema de archivos
+// Verificar rutas comunes en el sistema de archivos
 
 bool buscarArtefactosSistema() {
     // Buscamos rutas comunes instalados en Windows
@@ -56,7 +56,7 @@ bool buscarArtefactosSistema() {
     //Uso de IA para paras rutas exactas en sien si 
 }
 
-// 3. Sacar Hostname 
+// Sacar Hostname 
 string verificarHostname() {
 
     // Obtenemos el nombre del equipo de las variables de entorno 
