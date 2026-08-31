@@ -29,7 +29,7 @@ int main() {
     InfoEntorno infoResultados;
 
     // ------------------------------------------------------------
-    // 1. Recoleccion de datos usando funciones de Entorno.cpp
+    //  Recoleccion de datos usando funciones de Entorno.cpp
     // ------------------------------------------------------------
     
     // Obtenemos nucleos
@@ -70,7 +70,7 @@ int main() {
     cout << " Resultado del diagnostico: " << (infoResultados.aislado ? "AISLADO" : "NATIVO") << endl;
 
     // ------------------------------------------------------------
-    // 3. Manejo de archivos
+    //  Manejo de archivos
     // ------------------------------------------------------------
     try {
         cout << " Intentando registrar resultado en el log..." << endl;
@@ -94,7 +94,7 @@ int main() {
         return 1;
     }
 
-    // 4 final 
+    // final 
     // ------------------------------------------------------------
     cout << "----------------------------------------------------" << endl;
     if (infoResultados.aislado) {
