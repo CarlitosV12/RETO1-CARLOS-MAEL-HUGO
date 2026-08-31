@@ -13,8 +13,8 @@ Programación Avanzada para Ciberseguridad (PAC) — Fase 1
 | Luis Mael Treviño Mares | Documentación y preparación del entorno aislado para la ejecución del reto |
 
 ## Descripción del proyecto
+El objetivo del proyecto es actuar como mecanismo de evasion y diagnostico de seguridad con la recoleccion de datos consultados del hardward y archivos de SO. Analiza la informacion y verifica si es un entorno nativo o entorno aislado, junto con ello un reporte detallado con los datos recolectados. Se detecta analizando la cantidad de nucleos de CPU, hostname, artefactos del sistema, etc. Al tomar la decision y se demuestra que es nativo, el programa termina ejecutando una funcion llamada "ejecutarAccionReal()" donde nos imprime que el entorno es seguro. 
 
-[Expliquen en 3-5 líneas qué hace su programa: cómo detecta si está en un entorno aislado, qué dato del sistema o de la red utilizan para decidirlo, y qué acción "real" simulan cuando detectan que NO están aislados.]
 
 ## Cómo compilar
 
