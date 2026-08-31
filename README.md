@@ -47,8 +47,10 @@ Se tomo una captura de pantalla del estado en cuento se ejecuto el programa para
 En cuanto se ejecuto el programa, este genero un log en donde mostraba características y detalles del diagnostico.
 ![Log diagnostico](docs/logs_diagnostico.png)
 
-**Fuera del entorno aislado (en otra VM sin aislar, o en su equipo host):**
+## 3. Fuera del entorno aislado (en otra VM sin aislar, o en su equipo host):**
 Se realizo una ejecución del codigo en un entorno fuera sin aislar en un equipo de host, donde se imprime los datos del resultado del diagnostico diciendos el resultado en pantalla y aparte con el nombre del log. Donde si se ve, se muestra el hostname, nucleos y la frase "aislado: no".
+<img width="1087" height="877" alt="image" src="https://github.com/user-attachments/assets/9eb62e5f-3a20-405f-acfe-d886ce3713af" />
+
 
 
 
