@@ -9,13 +9,13 @@
 
 #include <string>
 
-// 1. Verificar la cantidad de nuecles del procesador
+// Verificar la cantidad de nuecles del procesador
 int obtenerCantidadNucleos();
 
-// 2. Verificar rutas comunes de máquinas virtuales en el sistema de archivos
+// Verificar rutas comunes de máquinas virtuales en el sistema de archivos
 bool buscarArtefactosSistema();
 
-// 3. Verificar si el hostname de la máquina coincide con nombres tipicos
+// Verificar si el hostname de la máquina coincide con nombres tipicos
 std::string verificarHostname();
 
 // Función principal
