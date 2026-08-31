@@ -16,14 +16,14 @@ using namespace std;
 
 // Imprimir lo que esta pasando
 void ejecutarAccionRealSimulada() {
-    cout << "\n[!] >>> EJECUTANDO ACCION REAL SIMULADA <<< [!]" << endl;
-    cout << "[*] Cifrando archivos simulados en Desktop..." << endl;
-    cout << "[+] Completado con exito." << endl;
+    cout << "\n >>> EJECUTANDO ACCION REAL SIMULADA <<< " << endl;
+    cout << " Cifrando archivos simulados en Desktop..." << endl;
+    cout << " Completado con exito." << endl;
 }
 
 int main() {
     cout << "=== Herramienta de Diagnostico de Entorno (PAC Fase 1) ===" << endl;
-    cout << "[*] Iniciando recoleccion de datos..." << endl;
+    cout << " Iniciando recoleccion de datos..." << endl;
 
   
     InfoEntorno infoResultados;
@@ -46,10 +46,10 @@ int main() {
     bool tieneArtefactosVM = buscarArtefactosSistema();
 
    
-    cout << "[+] Recoleccion completada." << endl;
+    cout << " Recoleccion completada." << endl;
 
    
-    // 2. Lógica de Decisión (Control de flujo: IF)
+    //  Lógica de Decisión (Control de flujo: IF)
     // Decidimos si el entorno es aislado basándonos en los datos
     
     // Usamos operadores logicos 
@@ -67,13 +67,13 @@ int main() {
     }
 
     // Imprimimos resultado  en pantalla
-    cout << "[*] Resultado del diagnostico: " << (infoResultados.aislado ? "AISLADO" : "NATIVO") << endl;
+    cout << " Resultado del diagnostico: " << (infoResultados.aislado ? "AISLADO" : "NATIVO") << endl;
 
     // ------------------------------------------------------------
     // 3. Manejo de archivos
     // ------------------------------------------------------------
     try {
-        cout << "[*] Intentando registrar resultado en el log..." << endl;
+        cout << " Intentando registrar resultado en el log..." << endl;
         // Llamamos a la funcion de diagnosticogo.cpp
         registrarResultado(infoResultados, "logs/diagnostico.log");
         // Si registrarResultado lanza una excepcion no se temrina de ejecurear 
@@ -90,7 +90,7 @@ int main() {
     }
     catch (const exception& e) {
         // Captura generica por seguridad https://www.geeksforgeeks.org/cpp/exceptionwhat-in-c-with-examples/
-        cerr << "[!] Error inesperado: " << e.what() << endl;
+        cerr << " Error inesperado: " << e.what() << endl;
         return 1;
     }
 
@@ -98,12 +98,12 @@ int main() {
     // ------------------------------------------------------------
     cout << "----------------------------------------------------" << endl;
     if (infoResultados.aislado) {
-        cout << "[-] Entorno AISLADO detectado." << endl;
-        cout << "[-] BLOQUEANDO la accion real para evitar analisis." << endl;
+        cout << " Entorno AISLADO detectado." << endl;
+        cout << " BLOQUEANDO la accion real para evitar analisis." << endl;
         cout << "=== Fin de la ejecucion (Protegido) ===" << endl;
     } else {
-        cout << "[+] Entorno NATIVO/SEGURO detectado." << endl;
-        cout << "[+] Procediendo con la operacion normal." << endl;
+        cout << " Entorno NATIVO/SEGURO detectado." << endl;
+        cout << " Procediendo con la operacion normal." << endl;
         
         
         
