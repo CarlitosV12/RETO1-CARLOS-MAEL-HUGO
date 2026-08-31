@@ -48,7 +48,9 @@ En cuanto se ejecuto el programa, este genero un log en donde mostraba caracter�
 ![Log diagnostico](docs/logs_diagnostico.png)
 
 **Fuera del entorno aislado (en otra VM sin aislar, o en su equipo host):**
-[Describan qué imprime el programa en pantalla y qué queda registrado en el log cuando NO detecta aislamiento.]
+Se realizo una ejecución del codigo en un entorno fuera sin aislar en un equipo de host, donde se imprime los datos del resultado del diagnostico diciendos el resultado en pantalla y aparte con el nombre del log. Donde si se ve, se muestra el hostname, nucleos y la frase "aislado: no".
+
+
 
 ## Estructura del proyecto
 
